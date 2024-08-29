@@ -1,0 +1,366 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+@font-face {
+    font-family: baijamjuree;
+    src: url(BaiJamjuree-Regular.ttf);
+}
+body{
+    font-family: baijamjuree;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(images/bg-header-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 2rem;
+}
+header .logo{
+    margin: 30px 0px;
+    padding: 30px 0px;
+}
+ .content h1{
+     font-size:6vh;
+     padding: 0px 20px;
+     text-align: center;
+     margin-bottom: 20px;
+     color: var(--Dark-Grayish-Blue);
+     
+}
+ .content p{
+    font-size: 18px;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    line-height: 25px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+ .content .btn-group{
+    width: 70%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+}
+ .content .btn-group .ios-btn{
+    width: 100%;
+    background-color: var(--Strong-Cyan);
+    padding:20px;
+    margin: 0px auto;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 0px 2px hsla(171, 66%, 44%, 0.76) ;
+    margin-bottom: 20px;
+}
+ .content .btn-group .ios-btn:hover{
+    border: 1.5px solid  hsl(171, 91%, 32%);
+    box-shadow: 2px 2px 5px hsla(171, 66%, 44%, 0.781) ;
+}
+ .content .btn-group .mac-btn{
+    width: 100%;
+    background-color: var(--Light-Blue);
+    padding:20px;
+    margin: 0px auto;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+   box-shadow: 0px 0px 2px 0 hsla(233, 100%, 69%, 0.767);
+   
+}
+ .content .btn-group .mac-btn:hover{
+    box-shadow: 2px 2px 5px 0 hsla(233, 100%, 69%, 0.767);
+    border: 1.5px solid hsl(233, 80%, 57%);
+   
+}
+main{
+    margin: 20px 0px;
+    padding: 20px;
+}
+main .tracking{
+    width: 80%;
+    margin:  0px auto;
+}
+main .tracking h1{
+    color: var(--Dark-Grayish-Blue);
+    font-size: 5.5vh;
+    text-align: center;
+    padding: 20px 0px;
+}
+main .tracking p{
+    font-size: 18px;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-weight: 400;
+}
+main .icloud{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 40px 0px;
+    align-items: center;
+}
+main .icloud .left-column{
+    width: 90%;
+    overflow: hidden;
+    margin: 20px 0px;
+}
+main .icloud .left-column img{
+    width: 100%;
+     object-fit: cover;
+     object-position: center;
+}
+main .icloud .right-column{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+main .icloud .right-column .column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+main .icloud .right-column .column h1{
+      color: var(--Dark-Grayish-Blue);
+      font-size: 4vh;
+}
+main .icloud .right-column .column p{
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+    line-height: 23px;
+}
+
+main .Access{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center; 
+     margin: 20px 0px;
+     padding: 20px 0px;
+}
+main .Access .left-column{
+    width: 90%;
+    text-align: center;     
+}
+main .Access .left-column h1{
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 20px;
+    font-size: 5.5vh;
+}
+main .Access .left-column p{
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+    line-height: 25px;
+}
+main .Access .right-column{
+    width: 90%;
+    overflow: hidden;
+    margin: 0px auto ;
+}
+main .Access .right-column img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+}
+main .super-charge{
+    width: 100%;
+}
+main .super-charge h1{
+    color: var(--Dark-Grayish-Blue);
+    font-size: 6vh;
+    text-align: center;
+    margin-bottom: 20px;
+}
+main .super-charge p{
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+    padding: 10px 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+main .super-charge  .grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+    margin: 0px auto;
+    text-align: center;
+}
+main .super-charge .grid .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+main  .super-charge .grid .card h2{
+    color: var(--Dark-Grayish-Blue);
+    font-size: 4vh;
+   
+}
+main  .super-charge .flex-box{
+    padding: 20px 0px;
+     display: flex;
+     flex-direction: column;
+     gap: 2.5rem; 
+     justify-content: center;
+     margin: 0px auto;
+}
+main .super-charge .flex-box .card{
+    width: 150px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+main .super-charge .flex-box .card img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer{
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+
+}
+footer .footer-logo{
+    width: 200px; 
+    margin: 20px 0px;
+    text-align: center;
+}
+footer ul{
+    list-style: none;
+    margin: 10px 0px;
+    text-align: center;
+}
+footer ul li{
+    margin-bottom: 20px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 400; 
+ 
+}
+footer ul li a:hover{
+    color: var(--Strong-Cyan);
+    font-weight: 700;
+}
+footer .social{
+    display: flex;
+    gap: 1rem;
+    margin: 20px 0px;
+}
+
+
+
+@media (min-width:768px){
+    header{
+        width: 100%;
+        height: 100vh;
+        background: url(images/bg-header-desktop.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .content .btn-group{
+        width: 70%;
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .content{
+        width: 60%;
+        margin: 0px auto;
+    }
+    .content .btn-group .ios-btn{
+        margin: 0px;
+    }
+    main .tracking{
+        margin: 0px auto;
+        padding: 0px;
+    }
+    main .tracking h1{
+        font-size: 3vw;
+    }
+    main .tracking p{
+        padding: 0px 80px;
+    }
+    main .icloud{
+        flex-direction: row;
+    }
+    main .icloud .right-column .column{
+       padding: 20px 80px; 
+       text-align: left;
+       gap: .1rem;
+    }
+    main .icloud .right-column .column h1{
+        font-size: 2vw;
+    }
+    main .icloud .right-column .column p{
+        padding-right: 100px;
+        font-size: 16px;
+    }
+    main .Access {
+        width: 70%;
+        margin: 0px auto;
+    }
+    main .Access h1{
+         font-size: 4vw;
+    }               
+    main .Access p{
+        width: 80%;
+        margin: 0px auto;
+    }     
+    main  .super-charge .flex-box{
+        width: 90%;
+        flex-direction: row;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer .footer-logo {
+        width: 100px;
+    }
+    footer .footer-logo img{
+        width: 60%;
+    }
+    footer ul{ 
+        
+        display: flex;   
+        gap: 2.5rem;
+        
+    }
+}
